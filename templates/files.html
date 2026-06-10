@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>☁️ CloudDocs</h2>
+
+        <a href="/">🏠 Dashboard</a>
+        <a href="/files">📁 My Files</a>
+        <a href="/logout">🚪 Logout</a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="topbar">
+            <h1>My Files</h1>
+        </div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Filename</th>
+                <th>Download</th>
+                <th>Time</th>
+            </tr>
+
+            {% for file in files %}
+            <tr>
+                <td>{{ file[0] }}</td>
+                <td>{{ file[1] }}</td>
+                <td>
+                    <a class="download" href="{{ file[2] }}" target="_blank">
+                        Download
+                    </a>
+                </td>
+                <td>{{ file[3] }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud SaaS Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>☁️ CloudDocs</h2>
+
+        <a href="/">🏠 Dashboard</a>
+        <a href="/files">📁 My Files</a>
+        <a href="/logout">🚪 Logout</a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="topbar">
+            <h1>Student Cloud Dashboard</h1>
+        </div>
+
+        <div class="card">
+
+            <h3>Upload Document</h3>
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <input type="file" name="file" required>
+
+                <br><br>
+
+                <button type="submit">Upload to Cloud</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
