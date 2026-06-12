@@ -10,7 +10,7 @@ A cloud-hosted web dashboard for managing and visualizing student data with remo
 - Web-based dashboard interface
 - Secure and structured data handling
 - Cloud deployment support
-- 
+
 ##  Problem It Solves
 
 Student data is often stored locally or in fragmented systems.  
