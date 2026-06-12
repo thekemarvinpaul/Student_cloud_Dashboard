@@ -26,9 +26,10 @@ This project centralizes access and enables remote data management through the c
 - Git & GitHub
 
 ## SCREENSHOTS
+![Dashboard](assets/Screenshot%20(213).png)
 
+![Login](assets/Screenshot%20(214).png)
 
+![Login](assets/Screenshot%20(215).png)
 
-cd cloud-student-system
-pip install -r requirements.txt
-python app.py
+![Login](assets/Screenshot%20(216).png)
